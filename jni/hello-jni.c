@@ -61,3 +61,14 @@ HelloWorld()
 int HelloWorld2(const char* data) {
     return 222;
 }
+
+typedef int ( *UnityCallback )( int );
+
+int HelloWorld3(UnityCallback callback) {
+    callback(663);
+    return 551;
+}
+
+int HelloWorld4(UnityCallback callback) {
+    return 556;
+}
